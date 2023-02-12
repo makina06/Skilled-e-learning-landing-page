@@ -1,0 +1,66 @@
+:root {
+  /* color font*/
+  --dark-blue: #13183f;
+  --light-gray: #83869a;
+  --white: #ffff;
+  --dark-pink: #f74780;
+  /* background-color*/
+  --dark-blue: #13183f;
+  --gradient-pink: linear-gradient(#ff6f48, #f02aa6);
+  --gradient-blue: linear-gradient(#4851ff, #f02aa6);
+  /*hover color*/
+  --: #666ca3;
+}
+
+/* CSS RESET*/
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+button {
+  background: var(--gradient-blue);
+}
