@@ -1,52 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  Get Started
-
-  Maximize skill, minimize budget
-
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
-
-  Get Started
-
-  Check out our most popular courses!
-
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
-
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
-
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
-
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
-
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
-
-  Get Started
-
-</body>
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+  </head>
+  <body>
+    <header class="header-landing-page">
+      <h2 class="title-header">skillled</h2>
+      <!-- Call To Action= cta -->
+      <button class="cta-btn">Get Started</button>
+    </header>
+    <main>
+      <section class="mission-statement">
+        <h1 class="mission-title">Maximize skill, minimize budget</h1>
+        <p class="mission-description">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want
+        </p>
+        <picture>
+          <img
+            class="hero-img"
+            src="./assets/image-hero-mobile.png"
+            alt="hero image"
+          />
+        </picture>
+      </section>
+      <section class="course-section">
+        <div class="course-grid">
+          <div class="card-course">
+            <h2 class="course-section-title">
+              Check out our most popular courses!
+            </h2>
+          </div>
+          <div class="card-course">
+            <img src="./assets/icon-animation.svg" alt="icon-animation" />
+            <h3 class="course-card-title">Animation</h3>
+            <p class="course-card-description">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+            <a href="#" class="course-card-cta-button">Get Started</a>
+          </div>
+          <div class="card-course">
+            <img src="./assets/icon-design.svg" alt="icon-design" />
+            <h3 class="course-card-title">Design</h3>
+            <p class="course-card-description">
+              Create beautiful, usable interfaces to help shape the future of
+              how the web looks.
+            </p>
+            <a href="#" class="course-card-cta-button">Get Started</a>
+          </div>
+          <div class="card-course">
+            <img src="./assets/icon-photography.svg" alt="icon-photography" />
+            <h3 class="course-card-title">Photography</h3>
+            <p class="course-card-description">
+              Explore critical fundamentals like lighting, composition, and
+              focus to capture exceptional photos.
+            </p>
+            <a href="#" class="course-card-cta-button">Get Started</a>
+          </div>
+          <div class="card-course">
+            <img src="./assets/icon-crypto.svg" alt="icon-crypto" />
+            <h3 class="course-card-title">Crypto</h3>
+            <p class="course-card-description">
+              All you need to know to get started investing in crypto. Go from
+              beginner to advanced with this 54 hour course.
+            </p>
+            <a href="#" class="course-card-cta-button">Get Started</a>
+          </div>
+          <div class="card-course">
+            <img src="./assets/icon-business.svg" alt="icon-business" />
+            <h3 class="course-card-title">Business</h3>
+            <p class="course-card-description">
+              A step-by-step playbook to help you start, scale, and sustain your
+              business without outside investment.
+            </p>
+            <a href="#" class="course-card-cta-button">Get Started</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-landing-page">
+      <h2 class="title-footer">skilled</h2>
+      <button class="cta-btn">Get Started</button>
+    </footer>
+  </body>
 </html>
