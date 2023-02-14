@@ -7,9 +7,18 @@
   /* background-color*/
   --gradient-pink: linear-gradient(#ff6f48, #f02aa6);
   --gradient-blue: linear-gradient(#4851ff, #f02aa6);
+
   /*hover color*/
   --btn-header: #666ca3;
-  /* Fonts */
+  --btn-mission-statement: linear-gradient(
+    rgba(255, 111, 72, 0.5),
+    rgba(240, 42, 166, 0.5)
+  );
+  --btn-footer: linear-gradient(
+    rgba(72, 81, 255, 0.5),
+    rgba(240, 42, 166, 0.5)
+  );
+  /*Fonts*/
   --ff-base: "Plus Jakarta Sans", sans-serif;
 }
 /* font-family: 'Plus Jakarta Sans', sans-serif; */
@@ -71,6 +80,7 @@ body {
 }
 button {
   border: none;
+  cursor: pointer;
 }
 
 .header-landing-page {
@@ -90,6 +100,9 @@ button {
   padding: 0.5em 1em;
   color: var(--white);
   background-color: var(--dark-blue);
+}
+.cta-btn:hover {
+  background-color: var(--btn-header);
 }
 
 main {
@@ -119,8 +132,13 @@ main {
   padding: 0.5em 1em;
   border: none;
 }
+.mission-statement-btn:hover {
+  background: var(--btn-mission-statement);
+}
 .hero-img-mobile {
   width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
 }
 .card-course-title {
   background: var(--gradient-pink);
@@ -181,4 +199,7 @@ main {
   color: var(--white);
   background: var(--gradient-blue);
   border-radius: 28px;
+}
+.footer-cta-btn:hover {
+  background: var(--btn-footer);
 }
