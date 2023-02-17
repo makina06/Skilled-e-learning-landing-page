@@ -140,6 +140,11 @@ main {
   max-width: 450px;
   margin: 0 auto;
 }
+
+.course-grid {
+  display: grid;
+  gap: 2rem;
+}
 .card-course-title {
   background: var(--gradient-pink);
   border-radius: 10px;
@@ -159,11 +164,13 @@ main {
   flex-direction: column;
   gap: 1em;
   margin-bottom: 1em;
+  box-shadow: 0px 0px 1px 0px #979797;
 }
 
 .card-course img {
   max-width: 56px;
   max-height: 56px;
+  transform: translateY(-50%);
 }
 .course-card-title {
   color: var(--dark-blue);
@@ -202,4 +209,38 @@ main {
 }
 .footer-cta-btn:hover {
   background: var(--btn-footer);
+}
+
+/* STYLING CSS TABLET */
+
+@media only screen and (min-width: 768px) {
+  body {
+  }
+  .header-landing-page {
+    z-index: -1;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .mission-statement {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .mission-statement-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  picture img {
+    min-width: 700px;
+    transform: translate(0, -150px);
+    z-index: 1;
+  }
 }
