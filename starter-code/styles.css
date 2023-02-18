@@ -106,7 +106,7 @@ button {
 }
 
 main {
-  margin: 1em 1em;
+  margin: 1em 1em 4em;
 }
 
 .mission-statement {
@@ -135,15 +135,18 @@ main {
 .mission-statement-btn:hover {
   background: var(--btn-mission-statement);
 }
+.mission-statement-img {
+  text-align: center;
+}
 .hero-img-mobile {
+  display: inline-block;
   width: 100%;
   max-width: 450px;
-  margin: 0 auto;
 }
 
 .course-grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 .card-course-title {
   background: var(--gradient-pink);
@@ -164,7 +167,7 @@ main {
   flex-direction: column;
   gap: 1em;
   margin-bottom: 1em;
-  box-shadow: 0px 0px 1px 0px #979797;
+  box-shadow: 0px 0px 0.8px 0px #979797;
 }
 
 .card-course img {
@@ -214,33 +217,29 @@ main {
 /* STYLING CSS TABLET */
 
 @media only screen and (min-width: 768px) {
-  body {
-  }
-  .header-landing-page {
-    z-index: -1;
-  }
-  main {
-    padding: 0;
-    margin: 0;
-  }
-
   .mission-statement {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    overflow: hidden;
-    margin-right: 0;
-    padding-right: 0;
-  }
-  .mission-statement-text {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
-  picture img {
-    min-width: 700px;
-    transform: translate(0, -150px);
-    z-index: 1;
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* STYLING CSS DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1110px;
+    margin: 0 auto;
   }
 }
