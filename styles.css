@@ -136,17 +136,13 @@ main {
   background: var(--btn-mission-statement);
 }
 .mission-statement-img {
-  text-align: center;
-}
-.hero-img-mobile {
-  display: inline-block;
-  width: 100%;
-  max-width: 450px;
+  display: flex;
+  justify-content: center;
 }
 
-.course-grid {
+.course-section {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 .card-course-title {
   background: var(--gradient-pink);
@@ -217,11 +213,31 @@ main {
 /* STYLING CSS TABLET */
 
 @media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .mission-statement {
     display: flex;
+    margin-top: 8em;
+    margin-bottom: 15em;
   }
 
-  .course-grid {
+  .mission-statement-text {
+  }
+  .mission-statement-img {
+    /* display: block; */
+    position: relative;
+    width: 100%;
+  }
+  .image-hero {
+    position: absolute;
+    top: -200px;
+    right: -250px;
+  }
+  picture img {
+    max-width: ;
+  }
+  .course-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -235,7 +251,7 @@ main {
     max-width: 1440px;
     margin: 0 auto;
   }
-  .course-grid {
+  .course-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
