@@ -39,7 +39,7 @@
 html,
 body {
   height: 100%;
-  font-size: 16px;
+  font-size: 1rem;
 }
 body {
   line-height: 1.5;
@@ -222,8 +222,6 @@ main {
     margin-bottom: 15em;
   }
 
-  .mission-statement-text {
-  }
   .mission-statement-img {
     /* display: block; */
     position: relative;
@@ -253,6 +251,16 @@ main {
   body {
     max-width: 1440px;
     margin: 0 auto;
+  }
+  .mission-statement-img {
+    /* display: block; */
+    position: relative;
+  }
+  .image-hero {
+    position: absolute;
+    top: -200px;
+    right: -250px;
+    width: 800px;
   }
 
   .course-section {
