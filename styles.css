@@ -247,15 +247,19 @@ main {
 /* STYLING CSS DESKTOP */
 
 @media only screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
   body {
     max-width: 1440px;
     margin: 0 auto;
   }
+
   .course-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    max-width: 1110px;
-    margin: 0 auto;
+    /* max-width: 1110px;
+    margin: 0 auto; */
   }
 }
