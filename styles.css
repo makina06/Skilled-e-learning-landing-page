@@ -100,6 +100,7 @@ button {
   padding: 0.5em 1em;
   color: var(--white);
   background-color: var(--dark-blue);
+  z-index: 1;
 }
 .cta-btn:hover {
   background-color: var(--btn-header);
