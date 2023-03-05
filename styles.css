@@ -86,7 +86,8 @@ button {
 .header-landing-page {
   display: flex;
   justify-content: space-between;
-  margin: 1em 1em;
+  align-items: center;
+  margin: 1em;
 }
 .title-header {
   font-size: 1.75rem;
@@ -97,7 +98,7 @@ button {
   border-radius: 28px;
   font-size: 1rem;
   font-weight: 700;
-  padding: 0.5em 1em;
+  padding: 0.75em 1.5em;
   color: var(--white);
   background-color: var(--dark-blue);
   z-index: 1;
@@ -117,28 +118,34 @@ main {
   font-weight: 800;
   color: var(--dark-blue);
   line-height: 3.15rem;
-  margin-bottom: 1em;
+  margin-bottom: 1.625rem;
 }
 .mission-description {
   line-height: 1.625rem;
   color: var(--light-gray);
   font-weight: 500;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .mission-statement-btn {
   border-radius: 31.5px;
   background: var(--gradient-pink);
   font-weight: 700;
   color: var(--white);
-  padding: 0.5em 1em;
+  padding: 1em 2.5em;
   border: none;
+  margin-bottom: 2.875rem;
 }
 .mission-statement-btn:hover {
   background: var(--btn-mission-statement);
 }
 .mission-statement-img {
-  display: flex;
-  justify-content: center;
+  background-image: url(./starter-code/assets/image-hero-mobile.png),
+    url(./starter-code/assets/image-hero-mobile.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 301px;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .course-section {
